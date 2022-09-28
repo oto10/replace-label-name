@@ -18,5 +18,6 @@ def replace_label_name():
         post_label_name = f'\"label\": \"{args[2]}\"'
         content = content.replace(pre_label_name, post_label_name)
         read_path.write_text(content)
-
-replace_label_name()
+        
+if __name__ == '__main__':
+    replace_label_name()
